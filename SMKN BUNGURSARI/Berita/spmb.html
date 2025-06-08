@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gambar Random</title>
+  <style>
+    #gambarRandom {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: block;
+      margin: 24px auto;
+    }
+  </style>
+</head>
+<body>
+  <img id="gambarRandom" src="" alt="Gambar Random" width="300">
+  <script>
+    // Daftar path gambar yang ingin dirandomkan
+    const gambarList = [
+      'gambar/smk.jpeg',
+      'gambar/smkn.jpg',
+    ];
+    // Pilih gambar secara acak
+    const randomIndex = Math.floor(Math.random() * gambarList.length);
+    document.getElementById('gambarRandom').src = gambarList[randomIndex];
+  </script>
+</body>
+</html>

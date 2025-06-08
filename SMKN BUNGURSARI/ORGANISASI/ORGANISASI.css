@@ -1,0 +1,324 @@
+html, body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.body {
+    background-color: rgb(2, 2, 82);
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    height: 200vh;
+}
+
+/* Responsive Images and Containers */
+img, table, div, section, article {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header */
+.kotak {
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+    top: 0;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 15px;
+    top: 0;
+    left: 0;
+}
+.tulisan1 {
+    position: relative;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: stretch;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+.posisi {
+    background: cyan;
+}
+.fontposisi {
+    color: black;;
+}
+.menu-lain {
+    display: flex;
+    align-items: center;
+    background: #860606;
+    flex: auto;
+    overflow-x: auto;
+}
+.menu-lain a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+}
+.menu-lain a:hover {
+    background: #a00;
+}
+
+/* Garis */
+.ko1,
+.ko2 {
+    width: 100%;
+    height: 5px;
+    background-color: cyan;
+    position: relative;
+}
+.ko1 { top: 0; }
+.ko2 { top: -270px; margin-top: opx; }
+
+/* Main Images */
+#gambarRandom {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 30px 0 0 0;
+    position: relative;
+    top: -30px;
+}
+.logo2 {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 20px auto 0 auto;
+    position: relative;
+    top: -300px;
+}
+
+/* Title & Subtitle */
+.judul, .subjudul {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: -280px;
+}
+.judul h1, .subjudul h3 {
+    margin: 0.5em 0;
+}
+
+/* Trapezoid - if used somewhere */
+.trapezoid {
+    top: -312px;
+    width: 250px;
+    height: 42px;
+    background: cyan;
+    clip-path: polygon(0 0, 250px 0, 220px 100%, 0 100%);
+    position: relative;
+}
+.tulisan2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+.kotak2 {
+    background-color: #860606;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: -270px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .logo2 {
+        width: 90px;
+        height: 90px;
+        top:-230px;
+    }
+    .smkn {
+        max-height: 200px;
+    }
+    .tulisan1 {
+        font-size: 20px;
+    }
+    .menu-utama, .menu-lain a {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .ko2 {
+        top: -240px;
+    }
+    .judul {
+        top: -240px;
+    }
+    .subjudul {
+        top: -250px;
+    }
+    .kotak2 {
+        top: -240px;
+    }
+    .trapezoid {
+        top: -282px;
+    }
+    .tulisan2 {
+        font-size: 25px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+        top: 5px;
+    }
+    .kotak {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10 10px;
+        height: 60px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .tulisan1 {
+        font-size: 16px;
+        left: 70px;
+        top: -40px;
+        margin-left: 0px;
+
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+        margin-left: 0px;
+        top: -30px;
+
+    }
+    
+    .menu-lain {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        left: 0px;
+        
+    }
+    .fontposisi {
+        margin-top: 0px;
+        
+    }
+    .menu-lain a {
+        width: 100%;
+        box-sizing: border-box ;
+        padding: 5px;
+        font-size: 16px;
+        justify-content: flex-start;
+        left: 10px;
+        padding-top: 5px;
+    }
+    .smkn {
+        max-height: 120px;
+        margin-top: 30px;
+        
+
+    }
+    .logo2 {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto 0 auto;
+        top: -150px;
+    }
+    .judul {
+        font-size: 10px;
+        top: -160px;
+    }
+    .subjudul {
+        font-size: 10px;
+        top: -160px;
+    }
+    .ko1 {
+       top: 0px;
+       position: relative;
+    }
+    .ko2 {
+        top: -152px;
+    }
+    .tulisan2 {
+        font-size: 20px;
+        padding: 2px;
+    }
+    .kotak2 {
+        top: -155px;
+        height: 30px;
+    }
+    .trapezoid {
+        top: -185px;
+        height: 30px;
+        clip-path: polygon(0 0, 180px 0, 140px 100%, 0 100%);
+        width: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    .kotak {
+        height: 45px;
+    }
+    .tulisan1 {
+        top: -31px;
+        left: 45px;
+    }
+    .judul {
+        font-size: 10px;
+        top: -140px;
+    }
+    .subjudul {
+        font-size: 10px;
+        top: -150px
+    }
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+    .logo2 {
+        top: -130px;
+    }
+    .ko2 {
+        top: -155px;
+    }
+    .kotak2 {
+        height: 30px;
+       
+    }
+    .trapezoid {
+        height: 32px; 
+        top: -187px;
+    }
+    .tulisan2 {
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+}

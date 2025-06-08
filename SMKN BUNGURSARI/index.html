@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SMK NEBU</title>
+</head>
+<body class="body">
+    <div class="kotak">
+        <img src="index gambar/logo.png" alt="logo" class="logo">
+        <div class="tulisan1">SMK NEGERI <br>BUNGURSARI</div>
+    </div>
+
+<!-------------------AREA NAVIGASI BAR---------------->
+    <nav>
+        <div class="menu-utama">BERANDA</div>
+        <div class="menu-lain">
+            <a href="Tentang/tentang.html"> TENTANG</a>
+            <a href="GTK/GTK.html">GTK</a>
+            <a href="KURIKULUM/KURIKULUM.HTML">KURIKULUM</a>
+            <a href="ORGANISASI/ORGANISASI.html">ORGANISASI</a>
+            <a href="KONTAK/KONTAK.html"> KONTAK</a>
+        </div>
+    </nav>
+<!----------------------AREA FOTO UTAMA----------------------->
+    <div class="ko1"></div>
+    <img id="gambarRandom" src="" alt="Gambar Random" width="100%">
+    <script>
+        // Daftar path gambar yang ingin dirandomkan
+        const gambarList = [
+          'index gambar/smk.jpeg',
+          'index gambar/smkn.jpg',
+          'index gambar/foto1.jpg',
+          'index gambar/foto2.jpg',
+          'index gambar/foto3.jpg',
+        ];
+        // Pilih gambar secara acak
+        const randomIndex = Math.floor(Math.random() * gambarList.length);
+        document.getElementById('gambarRandom').src = gambarList[randomIndex];
+    </script>
+
+    <img src="index gambar/logo2.jpg" class="logo2">
+    <div class="judul"><h1>SMK NEGERI BUNGURSARI</h1></div>
+    <div class="subjudul"><h3>SMK Kecil Yang Mampu Bersaing</h3></div>
+    <div class="ko2"></div>
+     <div class="kotak2"></div>
+    <div class="trapezoid">
+        <div class="tulisan2">Berita Terbaru</div>
+    </div>
+
+
+<!--------------AREA RBERITA TERBARU------------------------>
+    <nav>
+       <a href="#">
+           <div class="kotak3">
+               <img src="index gambar/spmb.jpg" alt="spmb" class="spmb">
+                    <div class="boxtext">
+                      <h3 >SPMB (Sistem Penerimaan Murid Baru)</h3>
+                    </div>
+                    <div class="boxdate">
+                       <h4>Jumat/30/mei/2025</h4>
+                    </div>
+                    <div class="boxtext2">
+                           SMK Negri Bungursari telah membuka SPMB <br>
+                        gelombang 1 akan di buka pada 10 juni -16 juni 2025 
+                    </div>
+                </img>
+           </div>
+       </a>
+    </nav>   
+<!-----------PENGEMBANG WEB----------->
+    <div class="kotakend">
+        <div class="boxtextend">
+            <div class="copyright"> " © Copyright - Solo Designer 2025 | Design By : <a href="https://www.instagram.com/theo_ajah_2007/">Theodorus</a>  "</div>
+        </div>
+    </div>
+</body>
+</html>

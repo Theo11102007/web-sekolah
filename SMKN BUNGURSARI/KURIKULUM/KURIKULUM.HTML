@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="KURIKULUM.css">
+    <title>SMK NEBU</title>
+</head>
+<body class="body">
+    <div class="kotak">
+        <img src="gambar/logo.png" alt="logo" class="logo">
+        <div class="tulisan1">SMK NEGERI <br>BUNGURSARI</div>
+    </div>
+
+    <nav>
+        <div class="menu-lain">
+            <a href="../index.html">BERANDA</a>
+            <a href="../Tentang/tentang.html"> TENTANG</a>
+            <a href="../GTK/GTK.html">GTK</a>
+            <a href="../KURIKULUM/KURIKULUM.HTML" class="posisi">
+               <div class="fontposisi"> KURIKULUM</div>
+            </a>
+            <a href="../ORGANISASI/ORGANISASI.html">ORGANISASI</a>
+            <a href="../KONTAK/KONTAK.html"> KONTAK</a>
+        </div>
+    </nav>
+<!----------------------AREA FOTO UTAMA----------------------->
+    <div class="ko1"></div>
+    <img id="gambarRandom" src="" alt="Gambar Random" width="100%">
+    <script>
+        // Daftar path gambar yang ingin dirandomkan
+        const gambarList = [
+          '../index gambar/smk.jpeg',
+          '../index gambar/smkn.jpg',
+          '../index gambar/foto1.jpg',
+          '../index gambar/foto2.jpg',
+          '../index gambar/foto3.jpg',
+        ];
+        // Pilih gambar secara acak
+        const randomIndex = Math.floor(Math.random() * gambarList.length);
+        document.getElementById('gambarRandom').src = gambarList[randomIndex];
+    </script>
+    <img src="gambar/logo2.jpg" class="logo2">
+    <div class="judul"><h1>SMK NEGERI BUNGURSARI</h1></div>
+    <div class="subjudul"><h3>SMK Kecil Yang Mampu Bersaing</h3></div>
+    <div class="ko2"></div>
+     <div class="kotak2"></div>
+    <div class="trapezoid">
+        <div class="tulisan2">KURIKULUM</div>
+    </div>
+   
+</body>
+</html>
